@@ -1,0 +1,11 @@
+<p>page-colors works!</p>
+
+<p><a [routerLink]="['/']">Home</a></p>
+
+<h3>Colors</h3>
+
+<div *ngIf="data$ | async as data" class="user-list">
+  <div *ngFor="let color of data" class="user-item">
+    <div class="user-item__name" [ngStyle]="{color: color.color}" [innerHTML]="color.name"></div>
+  </div>
+</div>

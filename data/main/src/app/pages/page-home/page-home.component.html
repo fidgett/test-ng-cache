@@ -1,0 +1,22 @@
+<p>page-home works!</p>
+
+<p><a [routerLink]="['/', 'users']">users</a></p>
+<p><a [routerLink]="['/', 'colors']">colors</a></p>
+
+<hr />
+
+<button (click)="clearAllCache()">Clear all cache</button>
+
+<br /><br />
+
+<button (click)="clearTagCache('pages')">Clear tag cache: «pages»</button>
+
+<br /><br />
+
+<button (click)="clearTagCache('users')">Clear tag cache: «users»</button>
+
+<br /><br />
+
+<button (click)="clearTagCache('colors')">Clear tag cache: «colors»</button>
+
+
